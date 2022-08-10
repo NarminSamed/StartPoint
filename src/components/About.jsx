@@ -1,6 +1,8 @@
 import React from 'react'
 import { partnerData } from '../partnerData'
 
+import CountUp from 'react-countup';
+
 const About = () => {
   return (
     <>
@@ -152,6 +154,47 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
     ))}
     </div>
     </div>
+
+<section className="counter">
+  <h2>Biz sizə ən yaxşı yolu tapmaqda kömək etmək üçün buradayıq</h2>
+    <p></p>
+    <div className="counter_container">
+    <div className="counter_box">
+        <p className='number'> 
+        <CountUp end={3}
+         duration={5}
+         suffix={'+'}
+         /></p>
+        <span>Təcrübə</span>
+      </div>
+      <div className="counter_box">
+        <p className='number'>
+        <CountUp end={4000}
+         duration={200} 
+         />
+          </p>
+        <span>İstifadəçilərimiz</span>
+      </div>
+      <div className="counter_box">
+        <p className='number'>
+        <CountUp end={50}
+         duration={40} 
+         />
+        </p>
+        <span>Partnyorlarımız</span>
+      </div>
+      
+      <div className="counter_box">
+        <p className='number'>
+        <CountUp end={4.7}
+         duration={5}
+         decimals={1}
+         suffix={'+'}
+         /></p>
+        <span>Reytinq</span>
+      </div>
+    </div>
+</section>
     </>
   )
 }

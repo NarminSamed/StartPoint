@@ -3,15 +3,68 @@ import girl from '../images/Layer-1.png'
 import appStore from '../assets/app-store.svg'
 import playMarket from '../assets/play-market.svg'
 import {gymsData} from '../gymsData'
-import { testimonialsData } from '../testimonialsData'
+import { testimonialsData,settings } from '../testimonialsData'
 import StarRatings from 'react-star-ratings'
-import Slider from "react-slick";
-import {partnerData, settings} from '../partnerData'
+import {partnerData} from '../partnerData'
 import video from '../images/video.MP4'
+import Testimonial from './Testimonial'
+
+
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
+
+
+
+
 
 
 
 const Home = () => {
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    variableWidth: true,
+    arrows:false,
+
+    
+    
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <>
 <a href="#" className="whatsapp">
@@ -32,17 +85,10 @@ const Home = () => {
 <div className="partners-center">
   
     <div className="partner">
-{/* <Slider {...settings} >
-
-{[partnerData.image].map((item,index)=>{return <div key={index}>{item} </div>;
-})} */}
-
      {partnerData.map((partner)=>(
     <div className="slide"> {partner.image}</div>
-    
     ))}
-{/* </Slider> */}
-
+ 
     {/* <Slider>
       <div className="slide">
       <img src={partner1} alt="partner" />
@@ -203,25 +249,15 @@ const Home = () => {
       </div>
       </div>
      </div>
+     
      <div className="testimonials-card">
-      {testimonialsData.map((testimonial)=>(
-        <div className="card">
+   <Slider {...settings} >
 
-       <div className='quotation-mark'> {testimonial.icon} </div>
-       <div className="details">{testimonial.details}</div>
-
-       <div className="user-testimonials">
-        <div className="user-img">
-          <div className='img'>{testimonial.image} </div>
-        </div>
-        <div className="user-name">
-          <h4>{testimonial.name}</h4>
-          <span>{testimonial.workplace}</span>
-        </div>
-       </div>
-
-       </div>
+      {testimonialsData.map((testimonial,index)=>(
+        <Testimonial key={testimonial.id} icon={testimonial.icon} details={testimonial.details} image={testimonial.image} workplace={testimonial.workplace} name={testimonial.name}/>
+     
       ))}
+       </Slider>
      </div>
     </section>
 

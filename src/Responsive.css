@@ -1,23 +1,62 @@
 @media (max-width:992px) {
 
     /* navbar */
+
+
+
     .logo {
         width: 110px;
         margin-top:10px
     }
-    .nav-link-left li {
+    /* .nav-link-left li {
          display: none;
-    }
-    .nav-link-left li:last-child {
+    } */
+    /* .none {
         display: block;
         font-size: 24px;
         cursor: pointer;
-   }
+        background: none;
+        border: none;
+   } */
+   .mobile-menu-icon {
+    display: block;
+    background-color: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+}
     .nav-link-left > i {
         display: none;
     }
     .nav-link-right {
         display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .nav-links-mobile {
+        /* position: absolute; */
+        display: flex;
+        flex-direction: column;
+        background-color: #52C264;
+        position: fixed;
+    top: 0;
+    left: 0;
+        transition: all .5s ease-out;
+        width: 100%;
+    }
+
+    .nav-item {
+        color: #FFF;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all .5s ease;
     }
     /* .nav-item {
         font-size: 14px;
@@ -149,13 +188,13 @@ font-size: 12px;
     width: 2rem;
     height: 2rem;
 }
-.left-arrow .fa-angle-left, 
+/* .left-arrow .fa-angle-left, 
 .right-arrow .fa-angle-right {
     position: absolute;
     top: 20%;
     right: 40%;
     font-size: 16px;
-}
+} */
 .card {
     width: 300px;
 }
@@ -251,6 +290,62 @@ font-size: 12px;
 .footer-content p {
     font-size: 12px;
 }
+
+
+
+
+/* About section */
+
+.about-text > h1 {
+    font-size: 30px;
+}
+.about-text .txt-description {
+    width: 60%;
+}
+.partner_advantages h2, .user_advantages h2 {
+    font-size: 30px;
+}
+
+.partner_main > h4, .user_main > h4 {
+    font-size: 30px;
+    padding-bottom: 4%;
+    text-align: center;
+}
+.partner_body, .user_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.partner_description > p, .user_description > p {
+    width: 100%;
+    padding-top: 2%;
+}
+
+.partner_advantages h2, .user_advantages h2 {
+    padding-bottom: 1%;
+}
+
+.partner_main, .user_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.img-container {
+    width: 100%;
+    height: 474px;
+}
+.partner_img,
+.user_img {
+    width: 494px;
+    height: 380px;
+}
+
+
 }
 
 
@@ -432,5 +527,72 @@ font-size: 12px;
 .sp-logo > p {
     font-size: 16px;
 }
+
+
+/* About Section */
+
+.about-text > h1 {
+    font-size: 28px;
+}
+.about-text .txt-description {
+    font-size: 14px;
+    width: 100%;
+}
+.partner_advantages h2, .user_advantages h2 {
+    font-size: 30px;
+}
+
+.partner_main > h4, .user_main > h4 {
+    font-size: 30px;
+    padding-bottom: 4%;
+    text-align: center;
+}
+.partner_body, .user_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.partner_description > p, .user_description > p {
+    width: 100%;
+    padding-top: 2%;
+}
+
+.partner_advantages h2, .user_advantages h2 {
+    padding: 10% 0;
+}
+
+.partner_main, .user_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.img-container {
+    width: 100%;
+    height: 274px;
+}
+.partner_img,
+.user_img {
+    width: 394px;
+    height: 350px;
+}
+.about_section_partners > h2 {
+    font-size: 26px;
+}
+
+
+.counter_container {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+  }
+  .counter_box {
+    width: 260px;
+    height: 170px; }
 }
 

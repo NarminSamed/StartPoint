@@ -1,6 +1,8 @@
 
+
 import './App.css';
 import './Responsive.css';
+
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -10,6 +12,9 @@ import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import "../node_modules/slick-carousel/slick/slick.css" 
+import "../node_modules/slick-carousel/slick/slick-theme.css";
+import "../node_modules/slick-carousel/slick.jquery.json"
 
 
 

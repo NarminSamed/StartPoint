@@ -1,39 +1,73 @@
-import React from 'react'
+
 import logo from '../startpoint.png'
 import flag from '../assets/azflag.svg'
 import {Link, Outlet} from 'react-router-dom'
 
+import React, { useState } from 'react'
+
 
 const Navbar = () => {
+
+const [isMobile, setIsMobile] = useState (false)
+
+  
   return (
+<>
+
+{/* <div class="overlay"> */}
+       
+{/* 
+        <div class="overlay-content">
+
+<div className="menu-icons" onClick={this.handleClick}>
+  <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+</div>
+          
+           <ul>
+            {menuItems.map((item, index) => {
+              return(
+                <li key={index}>
+                  <a className={item.cname} href ={item.url}>
+                    {item.title}
+                  </a>
+                </li>
+              )
+
+            })}
+
+           </ul>
+        </div>
+
+    </div> */}
+
+
     <nav className='navbar'>
       <div className="nav-container">
-
-       {/* <div className="overlay" id='myNav'>
-        <a href="javascript:void(0)"><i class=" closeBtn fa-solid fa-xmark"></i></a> */}
-
-        {/* Overlay Content */}
-        {/* <div className="overlay-content">
-          <a href="">home</a>
-          <a href="">home</a>
-          <a href="">home</a>
-          <a href="">home</a>
-        </div> */}
-        {/* <ScriptTag isHydrating={true} type="text/javascript" src="curtainNavbar.js" /> */}
-       {/* </div> */}
 
         <Link to='/'><img src={logo} alt="StartPoint.png" className="logo" /></Link>
         
         <div className="nav-link-left">
-          <ul>
+         
+          <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
+          onClick={() => setIsMobile(false)}
+          >
             <li><Link to='/about' className='nav-item line'>Haqqımızda</Link></li>
             <li><Link to='/gym' className='nav-item line'>İdman zalları</Link></li>
             <li><Link to='/pricing' className='nav-item line'>Qiymət</Link></li>
             <li><Link to='/contact' className='nav-item line'>Əlaqə</Link></li>
-            <li className="none"><i class="fa-solid fa-bars openSideNav"></i></li>
+            <li><Link to='/contact' className='nav-item line'>Əlaqə</Link></li>
+            {/* <li className="none"><i class="fa-solid fa-bars openSideNav"></i></li> */}
           </ul>
+         
           <i class="fa-solid fa-magnifying-glass"></i>
+         
         </div>
+
+        <button className="mobile-menu-icon"
+          onClick={() => setIsMobile(!isMobile)}
+          >
+           {isMobile ?  <i className="fas fa-times"></i> : <i className="fa-solid fa-bars"></i> } 
+            </button>
 
         <div className="nav-link-right">
         <Link to='/login' className='login-btn'>Giriş</Link>
@@ -45,9 +79,9 @@ const Navbar = () => {
         </div>
         </div>
 
-      </div>
-        
+      </div> 
     </nav>
+    </>
   )
 }
 
