@@ -15,7 +15,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -65,18 +66,19 @@ const Home = () => {
       }
     ]
   };
+
+  AOS.init();
+
+
   return (
     <>
-<a href="#" className="whatsapp">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
 
     <header className='header'>
-      <div className="head-text" data-aos="fade-right">
+      <div  className="head-text" data-aos="zoom-out-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
         <h1><span>İdman zalı axtarırsınız,</span><br />amma bilmirsiniz harada?</h1>
         <p>Onda sizə StartPoint yardımçı olacaq.</p>
       </div>
-      <div className="head-photo" data-aos="fade-left">
+      <div data-aos="zoom-out-left" data-aos-delay="100" data-aos-easing="ease-in-sine" data-aos-duration="600" className="head-photo">
         <img src={girl} alt="young girl" /> 
       </div>
     </header>
@@ -84,7 +86,8 @@ const Home = () => {
 
 <div className="partners-center">
   
-    <div className="partner">
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="partner">
      {partnerData.map((partner)=>(
     <div className="slide"> {partner.image}</div>
     ))}
@@ -112,10 +115,10 @@ const Home = () => {
     </div>
     </div>
 
-    <section className='advantages'>
-    <h2> <span> StartPoint </span>  üstünlükləri ilə biznesinizi gücləndirin</h2>
+    <section  className='advantages'>
+    <h2 data-aos="fade-right"> <span> StartPoint </span>  üstünlükləri ilə biznesinizi gücləndirin</h2>
 
-    <div className="benefits">
+    <div className="benefits" data-aos="zoom-out-up">
       <div className="user benefit">
       <i class="fa-solid fa-user-group"></i>
       <h4>İstifadəçi interfeysi</h4>
@@ -191,8 +194,6 @@ const Home = () => {
           <p className='gym-title'>{gym.title}</p>
           <p className='location'>{gym.location}</p>
           <div className="rating">
-          {/* {starRayting.map((star)=>(<span className='icon'>{star.rating}</span>))} */}
-
           <StarRatings
               rating={gym.starCount}
               starDimension="20px"
@@ -211,10 +212,10 @@ const Home = () => {
     </section>
 
     <section className="why-us">
-        <h2>Niyə bizi seçməlisiniz?</h2>
+        <h2 data-aos="fade-right">Niyə bizi seçməlisiniz?</h2>
       <div className="why-us_body">
 
-        <div className="why-us_text">
+        <div data-aos="fade-right" data-aos-delay="300" className="why-us_text">
         <h4>Zal idarəetmə və qeydiyyat sistemi bizlikdir! </h4>
         <div className="why-us_description">
           <p>İdman kompleksləri üçün vahid axtarış və müqayisə sistemi</p>
@@ -230,7 +231,7 @@ const Home = () => {
         </div>
         </div>
 
-        <div className="why-us_img">
+        <div className="why-us_img" data-aos="fade-left">
           <img src="https://res.cloudinary.com/dkt4cajom/image/upload/v1657983562/gym-girls_farmcm.png" alt="gym-girls" />
           <div className="rectangle"></div>
         </div>
@@ -240,14 +241,6 @@ const Home = () => {
     <section className="testimonials">
      <div className="testimonials-header">
       <h2>Müştəri məmnuniyyəti</h2>
-      <div className="arrows">
-        <div className="left-arrow">
-      <i class="fa-solid fa-angle-left"></i>
-      </div>
-      <div className="right-arrow">
-      <i class="fa-solid fa-angle-right"></i>
-      </div>
-      </div>
      </div>
      
      <div className="testimonials-card">
@@ -262,8 +255,9 @@ const Home = () => {
     </section>
 
 <section className="price-table">
-  <h2>Qiymət cədvəli</h2>
-<div className="packages">
+  <h2 data-aos="fade-right">Qiymət cədvəli</h2>
+<div className="packages" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
   <div className="package ">
  <div className="package-title">
   <p className='name'>Standart <br /> paket</p>
@@ -381,9 +375,9 @@ const Home = () => {
 
     <section className="promotion">
       <div className="promotion-main">
-        <h2>İdman Rahatlığı StartPoint-də!</h2>
-        <p>Tətbiqi yüklə, StartPoint rahatlığından faydalan.</p>
-        <div className="prm-buttons">
+        <h2 data-aos="fade-right">İdman Rahatlığı StartPoint-də!</h2>
+        <p data-aos="fade-right">Tətbiqi yüklə, StartPoint rahatlığından faydalan.</p>
+        <div data-aos="zoom-out" data-aos-delay="300" className="prm-buttons">
         <a href="#"><img className='app-store' src={appStore} alt="App store" /></a>
         <a href="#"><img className='play-market' src={playMarket} alt="Play Market" /></a>
 
@@ -396,10 +390,10 @@ const Home = () => {
       </div>
     </section>
 
-    <div className="discover">
+    {/* <div className="discover">
       <p>Hələ də zövqünüzə uyğun idman zalını tapmamısınız?</p>
       <a href="#" className="discover-btn">İndi kəşf et</a>
-    </div>
+    </div> */}
     </>
   )
 }

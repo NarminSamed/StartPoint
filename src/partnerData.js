@@ -22,31 +22,5 @@ import {Image} from 'cloudinary-react'
             publicId='https://res.cloudinary.com/dkt4cajom/image/upload/v1658167125/Group_20_mepssn.png'/>}        
 ];
 
-/* export const settings = {
-   dots: true,
-   infinite: true,
-   slidesToShow: 3,
-   slidesToScroll: 1,
-   autoplay: true,
-   speed: 2000,
-   autoplaySpeed: 2000,
-   cssEase: "linear"
- }; */
 
 
-//  var settings = {
-//    dots: true,
-//    infinite: true,
-//    speed: 500,
-//    slidesToShow: 1,
-//    slidesToScroll: 1
-//  };
-
-
-export const settings ={
-   dots: true,
-   infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-}

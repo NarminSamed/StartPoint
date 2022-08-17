@@ -10,6 +10,19 @@ const Navbar = () => {
 
 const [isMobile, setIsMobile] = useState (false)
 
+const options = [
+  {value: 'Azerbaijan', text: 'Az'},
+  {value: 'English', text: 'Eng'},
+  {value: 'Russia', text: 'Rus'},
+];
+
+const [selected, setSelected] = useState(options[0].value);
+
+const handleChange = event => {
+  setSelected(event.target.value);
+};
+
+
   
   return (
 <>
@@ -72,11 +85,22 @@ const [isMobile, setIsMobile] = useState (false)
         <div className="nav-link-right">
         <Link to='/login' className='login-btn'>Giriş</Link>
         <button>Qeydiyyat</button>
-        <div className="nav-lang">
+        {/* <div className="nav-lang">
           <img src={flag} alt="AZ-flag" />
           <span>AZ</span>
           <i className="fa-solid fa-angle-down"></i>
-        </div>
+        </div> */}
+
+<div>
+      <select className='nav-lang' value={selected} onChange={handleChange}>
+        {options.map(option => (
+          <option className='lang_option' key={option.value} value={option.value}>
+            {option.text} 
+          </option>
+        ))}
+      </select>
+    </div>
+
         </div>
 
       </div> 

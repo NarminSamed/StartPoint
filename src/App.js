@@ -11,6 +11,7 @@ import Gym from './components/Gym';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Whatsapp from './components/Whatsapp';
 
 import "../node_modules/slick-carousel/slick/slick.css" 
 import "../node_modules/slick-carousel/slick/slick-theme.css";
@@ -31,6 +32,7 @@ function App() {
     <Route path='/contact' element={<Contact/>} />
   </Routes>
   <Footer />
+  <Whatsapp />
   </BrowserRouter>
  </div>
   );
