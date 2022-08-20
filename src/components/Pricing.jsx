@@ -5,7 +5,7 @@ const Pricing = () => {
     <>
 <div className='price-hero'>
       <div className="price-hero__body">
-          <h1>Qiymətlərimiz</h1>
+          <h1 data-aos="fade-right">Qiymətlərimiz</h1>
       </div>
 
 </div>
@@ -13,11 +13,13 @@ const Pricing = () => {
 <div className="price-box_hero">
 
   <div className="price-box_title">
-<h3>Fitnes biznesinizi idarə etmək üçün sizə lazım olan hər şey, sərfəli qiymətlə</h3>
-<p>Bizə qoşul İlk ay ödənişsiz istifadə et</p>
+<h3 data-aos="zoom-in" data-aos-delay="300">Fitnes biznesinizi idarə etmək üçün sizə lazım olan hər şey, sərfəli qiymətlə</h3>
+<p data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-delay="400">Bizə qoşul İlk ay ödənişsiz istifadə et</p>
 </div>
 
-<div className="price-box_wrapper">
+<div data-aos="zoom-in" data-aos-delay="400"  className="price-box_wrapper">
+
     <div className="price-box_body">
   <p className='name'>Standart <br /> paket</p>
   <p className='info'>Zalın il ərzində tətbiqdə görünməsi</p>
@@ -60,8 +62,9 @@ const Pricing = () => {
 
 <div className="price_table">
   <div className="table_title">
-    <h4>StartPoint üstünlükləri</h4>
-    <p>Bütün təklifləri müqayisə edin</p>
+    <h4 data-aos="zoom-in">StartPoint üstünlükləri</h4>
+    <p data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"  data-aos-delay="400">Bütün təklifləri müqayisə edin</p>
   </div>
 
   <table className='table'>
@@ -130,7 +133,7 @@ const Pricing = () => {
 </div>
 
 <div className="faq-client">
-<h2>SSS</h2>
+<h2 data-aos="zoom-in">SSS</h2>
 <div className="faq-client_wrapper">
 
   <div className="faq_boxes_top">

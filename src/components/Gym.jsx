@@ -58,18 +58,18 @@ const Gym = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
         }
       },
       {
@@ -82,27 +82,16 @@ const Gym = () => {
     ]
   };
 
-// const wrapper = document.querySelector('.wrapper')
-// const selectBtn = wrapper.querySelector('.select-btn')
-
-// selectBtn.addEventListener('click', ()=> {
-//   wrapper.classList.toggle('active')
-// })
-
-// const handleChange = (selectedOption) => {
-//   console.log("handleChange", selectedOption )
-// }
-
-// const [selected, setSelected] = useState([]);
 
   return (
     <>
 <section className="gym_header">
-  <h1>İdman zalları</h1>
+  <h1 data-aos="fade-right">İdman zalları</h1>
 
-<div className="select_wrapper">
+<div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"  className="select_wrapper">
 
-<div className="select-group">
+<div  className="select-group">
 
 <div className="select">
   

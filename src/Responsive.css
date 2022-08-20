@@ -1,81 +1,128 @@
+@media (max-width:1200px) {
+
+/* Navbar */
+
+
+.main-menu_item {
+    font-size: 14px;
+}
+
+.nav_search__toggle > .search_icon {
+    font-size: 16px;
+}
+.nav-link-right > a {
+    font-size: 14px;
+}
+.nav-link-left > button {
+    font-size: 14px;
+} 
+
+/* ABOUT PAGE */
+
+.partner_main > h4,
+.user_main > h4 {
+    font-size: 28px;
+}
+.partner_img,
+.user_img {
+    width: 494px;
+    height: 380px;
+}
+
+.partner_description > p,
+.user_description > p {
+ font-size: 14px;
+ width: 100%;
+}
+/* GYM PAGE */
+
+.select_wrapper > .submit-btn > a {
+    font-size: 16px;
+}
+
+.price-hero__body{
+    padding: 15% 6% 10%;
+ }
+
+.price-hero__body > h1 {
+    font-size: 35px;
+}
+.price-hero__body > p {
+    font-size: 18px;
+    color: var(--primary-grey-hover);
+    padding-top: 1.5%;
+}
+
+    /* PRICE PAGE */
+
+    .price-box_wrapper .price-box_body .info {
+        font-size: 14px;
+    }
+    .price-box_wrapper .price-box_body .name {
+        font-size: 22px;
+    }
+}
+
+
+
+
 @media (max-width:992px) {
 
     /* navbar */
-
-
 
     .logo {
         width: 110px;
         margin-top:10px
     }
-    /* .nav-link-left li {
-         display: none;
-    } */
-    /* .none {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-        background: none;
-        border: none;
-   } */
+
    .mobile-menu-icon {
-    display: block;
-    background-color: none;
-    border: none;
-    outline: none;
+    display: flex;
     position: absolute;
     top: 15px;
     right: 25px;
     font-size: 30px;
 }
-    .nav-link-left > i {
-        display: none;
-    }
-    .nav-link-right {
-        display: none;
-    }
 
-    .nav-links {
-        display: none;
-    }
-    
-    .nav-links-mobile {
-        /* position: absolute; */
-        display: flex;
-        flex-direction: column;
-        background-color: #52C264;
-        position: fixed;
+
+.nav__btn > .fa-bars {
+    display: block;
+    font-size: 30px;
+}
+
+.nav-link-left {
+    visibility: hidden;
+}
+
+
+.nav-link-right {
+    display: none;
+}
+
+.navbar-search {
+    display: none;
+}
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-light-grey);
+    position: fixed;
     top: 0;
     left: 0;
-        transition: all .5s ease-out;
-        width: 100%;
-    }
+    transition: all .5s ease-out;
+    width: 100%;
+    height: 100%;
+    padding: 50px 60px;
+}
+.main-menu_item {
+    font-size: 26px;
+    letter-spacing: .5px;
+}
+.nav-link-left ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
 
-    .nav-item {
-        color: #FFF;
-        text-align: center;
-        padding: 32px;
-        width: 100%;
-        transition: all .5s ease;
-    }
-    /* .nav-item {
-        font-size: 14px;
-        padding: 5px 7px;
-    }
-    .nav-link-right button {
-        width: 85px;
-        height: 40px;
-        font-weight: 400;
-        margin: 0 1rem;
-        font-size: 13px;
-        letter-spacing: .3px;
-    }
-    .nav-lang span {
-        font-size: 14px;
-    }
-    .login-btn {
-        font-size: 14px;
-    } */
 
     /* header */
     .head-text {
@@ -184,17 +231,7 @@ font-size: 12px;
 .testimonials-header > h2 {
     font-size: 35px;
 }
-.left-arrow, .right-arrow {
-    width: 2rem;
-    height: 2rem;
-}
-/* .left-arrow .fa-angle-left, 
-.right-arrow .fa-angle-right {
-    position: absolute;
-    top: 20%;
-    right: 40%;
-    font-size: 16px;
-} */
+
 .card {
     width: 300px;
 }
@@ -335,6 +372,8 @@ font-size: 12px;
     align-items: center;
     gap: 30px;
 }
+
+
 .img-container {
     width: 100%;
     height: 474px;
@@ -345,7 +384,96 @@ font-size: 12px;
     height: 380px;
 }
 
+/* GYM PAGE */
 
+.select_wrapper > .submit-btn > a {
+    font-size: 14px;
+}
+
+.select .select-btn > span {
+    font-size: 14px; 
+}
+
+.options .option-item {
+  font-size: 14px;
+}
+
+.gyms_section_promotion > h2 {
+    font-size: 30px;
+}
+
+.gym_header {
+    gap: 20px;
+}
+.gym_header > h1 {
+    font-size: 35px;
+    padding: 15% 6% 0%;
+}
+.select_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.select .select-btn > i {
+    color: #999;
+    font-size: 12px;
+    padding: 0 5px;
+}
+/* PRICE PAGE */
+.price-box_wrapper .price-box_body .name {
+    font-size: 20px;
+}
+.price-box_title {
+    text-align: center;
+}
+.price_btn > a {
+    padding: 5px 20px;
+    font-size: 16px;
+}
+.price_number > p {
+    font-size: 30px;
+    color: var(--primary-white);
+}
+.price_number > i {
+    font-size: 26px;
+    color: var(--primary-white);
+}
+
+/* CONTACT PAGE */
+.contact_head > h2 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: .5px;
+}
+.contact__container .contact_title > h4 {
+    font-size: 25px;
+}
+.contact__container .contact_info .contact_flex > h4 {
+    font-size: 16px;
+}
+.contact__container .contact_info .contact_flex > p, .contact__container .contact_info .contact_flex > a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 2%;
+}
+.contact__container .contact_info .contact_flex > i {
+    font-size: 30px;
+    color: var(--primary-red);
+    padding-bottom: 10%;
+}
+.contact__container {
+    padding: 3% 0;
+}
+.form-area {
+    padding: 5% 4%;
+    font-size: 12px;
+}
+.contact__form_hero form > button {
+    height: 50px;
+    font-size: 16px;
+}
+.contact__form_hero form > h3 {
+    font-size: 18px;
+}
 }
 
 
@@ -594,5 +722,160 @@ font-size: 12px;
   .counter_box {
     width: 260px;
     height: 170px; }
+
+    /* GYM PAGE */
+
+    .gyms_section_promotion > h2 {
+        font-size: 22px;
+    }
+
+    .gym-heade >h2 {
+        font-size: 25px;
+    }
+    .gym_header > h1 {
+        font-size: 26px;
+        padding: 25% 6% 0%;
+    }
+    .select_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+    .select-group {
+        width: 100%;
+      }
+      .select_wrapper > .submit-btn {
+        height: 48px;
+        width: 50%;
+    }
+
+    /* PRICE PAGE */
+    .price-hero__body{
+        padding: 25% 6% 10%;
+     }
+
+    .price-hero__body > h1 {
+        font-size: 35px;
+    }
+    .price-box_title > h3 {
+        font-size: 20px;
+        padding: 2% 2%;
+    }
+    .price-box_title > p {
+        font-size: 15px;
+    }
+    .price-box_wrapper {
+        padding: 2% 0 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .price-box_wrapper .price-box_body {
+        width: 60%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .price-box_wrapper .price-box_body .name {
+        font-size: 24px;
+    }
+    .price-box_wrapper .price-box_body .info {
+        font-size: 16px;
+    }
+    .price_number > p {
+        font-size: 36px;
+    }
+    .price_number > i {
+        font-size: 30px;
+    }
+    .price_btn > a {
+        padding: 7px 30px;
+        font-size: 18px;
+    }
+    .table_head {
+        font-size: 16px;
+
+    }
+    .table_row .fa-xmark,
+    .table_row .fa-check {
+        font-size: 20px;
+    }
+    .feature_title {
+        font-size: 14px;
+    }
+
+    .faq-client_box > h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 2%;
+        color: var(--primary-dark-blue);
+    }
+    .faq-client_box > p {
+        font-size: 14px;
+        width: 90%;
+        line-height: 32px;
+    }
+    .faq_boxes_top, 
+    .faq_boxes_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .faq-client_box {
+        width: 100%;
+   }
+
+   /* contact Page */
+
+   .contact_head {
+    padding: 25% 6% 8%;
+}
+.contact_head > h2 {
+    font-size: 28px;
+}
+.contact__container .contact_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.contact__container .contact_info .contact_flex > i {
+    font-size: 35px;
+    padding-bottom: 5%;
+}
+.contact__container .contact_info .contact_flex {
+    width: 60%;
+    padding: 4% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--primary-light-grey);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s all;
+    
+}
+.contact__container .contact_info .contact_flex:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: scale(1.1);
+}
+   .contact__form_hero form {
+    width: 80%; }
+    
+    .contact_img {
+        width: 80%;
+    }
+    
+.contact__form_hero {
+    padding: 8% 0 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
 }
 

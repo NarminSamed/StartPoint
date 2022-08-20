@@ -5,7 +5,7 @@ const Whatsapp = () => {
     <>
 
 <a href="#" className="whatsapp">
-<i class="fa-brands fa-whatsapp"></i>
+<i className="fa-brands fa-whatsapp"></i>
 </a>
 
     </>

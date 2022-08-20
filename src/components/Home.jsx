@@ -46,7 +46,7 @@ const Home = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
@@ -88,30 +88,11 @@ const Home = () => {
   
     <div data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" className="partner">
-     {partnerData.map((partner)=>(
+     {partnerData.map((partner,index)=>(
     <div className="slide"> {partner.image}</div>
     ))}
  
-    {/* <Slider>
-      <div className="slide">
-      <img src={partner1} alt="partner" />
-      </div>
-
-      <div className="slide power">
-      <img src={partner2} alt="partner" />
-      </div>
-
-      <div className="slide">
-      <img src={partner3} alt="partner" />
-      </div>
-      <div className="slide">
-      <img src={partner4} alt="partner" />
-      </div>
-      <div className="slide">
-      <img src={partner5} alt="partner" />
-      </div>
-      
-      </Slider> */}
+   
     </div>
     </div>
 
@@ -120,60 +101,60 @@ const Home = () => {
 
     <div className="benefits" data-aos="zoom-out-up">
       <div className="user benefit">
-      <i class="fa-solid fa-user-group"></i>
+      <i className="fa-solid fa-user-group"></i>
       <h4>İstifadəçi interfeysi</h4>
       <div className="adv-main">
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Kartsız, rahat QR-la gediş etmək imkanı</p>
         </div>
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Fitness mərkəzləri haqqında ətraflı məlumat</p>
         </div>
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Tətbiqimizlə gediş edənlərə endirimli qiymətlər</p>
         </div>
       </div>
       <a href="#">Ətraflı</a>
       </div> 
 
       <div className="management benefit">
-      <i class="fa-solid fa-bullseye"></i>
+      <i className="fa-solid fa-bullseye"></i>
       <h4>İdarəetmə paneli</h4>
       <div className="adv-main">
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Büdcənizə və komfortunuza uyğun zal idarəetmə sistemi</p>
         </div>
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Hesabatlılıqla bağlı dəqiq analizlər aparmaq imkanı </p>
         </div>
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Həm nağd, həm onlayn ödəniş dəstəyi</p>
         </div>
       </div>
       <a href="#">Ətraflı</a>
       </div>
 
       <div className="operator benefit">
-      <i class="fa-solid fa-headset"></i>
+      <i className="fa-solid fa-headset"></i>
       <h4>Operator üstünlükləri</h4>
       <div className="adv-main">
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Aktiv abunələrin müştəri məlumatlarını izləmək imkanı</p>
         </div>
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Operator panelində nağd ödəniş etmək imkanı</p>
         </div>
         <div className="adv-text">
-        <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <i className="fa-solid fa-circle-check"></i>
+        <p>Geri qaytarma əməliyyatının aktiv abunəliklər hissəsindən icrası</p>
         </div>
       </div>
       <a href="#">Ətraflı</a>
@@ -187,7 +168,7 @@ const Home = () => {
         <button>Hamısı</button>
       </div>
       <div className="gym-wrapper">
-      {gymsData.map((gym)=>(
+      {gymsData.map((gym, index)=>(
         <div className="gym-container">
         <div className='gym-img'>{gym.image}</div>  
         <div className="gym-body">
@@ -227,7 +208,7 @@ const Home = () => {
         </div>
         <div className="why-us_btn">
           <a href="#">Ətraflı</a>
-          <i class="fa-solid fa-circle-arrow-right"></i>
+          <i className="fa-solid fa-circle-arrow-right"></i>
         </div>
         </div>
 
@@ -264,20 +245,20 @@ const Home = () => {
   <p className='info'>Zalın il ərzində tətbiqdə görünməsi</p>
   <div className="price">
   <p className='number'>100</p>
-  <i class="fa-solid fa-manat-sign"></i>
+  <i className="fa-solid fa-manat-sign"></i>
   </div>
  </div>
 <div className="package-main">
   <div className="details">
-  <i class="fa-solid fa-check"></i>
+  <i className="fa-solid fa-check"></i>
   <p className="detail">İstifadəçi Mobil APP-i</p>
   </div>
   <div className="details">
-  <i class="fa-solid fa-check"></i>
+  <i className="fa-solid fa-check"></i>
   <p className="detail">StartPoint partnyorları siyahısında yerləşmə</p>
   </div>
   <div className="details">
-  <i class="fa-solid fa-check"></i>
+  <i className="fa-solid fa-check"></i>
   <p className="detail">24/7 dəstək</p>
   </div>
 </div>
@@ -289,7 +270,7 @@ const Home = () => {
   <p className='info'>Zalın il ərzində tətbiqdə görünməsi</p>
   <div className="price">
   <p className='number'>500</p>
-  <i class="fa-solid fa-manat-sign"></i>
+  <i className="fa-solid fa-manat-sign"></i>
   </div>
  </div>
 <div className="package-main">
@@ -330,7 +311,7 @@ const Home = () => {
   <p className='info'>Zalın il ərzində tətbiqdə görünməsi</p>
   <div className="price">
   <p className='number'>950</p>
-  <i class="fa-solid fa-manat-sign"></i>
+  <i className="fa-solid fa-manat-sign"></i>
   </div>
  </div>
 <div className="package-main">

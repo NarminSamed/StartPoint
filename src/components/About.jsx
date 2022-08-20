@@ -98,15 +98,15 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
       <div className="adv-main">
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Kartsız, rahat QR-la gediş etmək imkanı</p>
         </div>
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Fitness mərkəzləri haqqında ətraflı məlumat</p>
         </div>
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Tətbiqimizlə gediş edənlərə endirimli qiymətlər</p>
         </div>
       </div>
       <a href="#">Ətraflı</a>
@@ -118,15 +118,15 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
       <div className="adv-main">
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Büdcənizə və komfortunuza uyğun zal idarəetmə sistemi</p>
         </div>
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Hesabatlılıqla bağlı dəqiq analizlər aparmaq imkanı </p>
         </div>
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Həm nağd, həm onlayn ödəniş dəstəyi</p>
         </div>
       </div>
       <a href="#">Ətraflı</a>
@@ -138,15 +138,15 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
       <div className="adv-main">
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Aktiv abunələrin müştəri məlumatlarını izləmək imkanı</p>
         </div>
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Operator panelində nağd ödəniş etmək imkanı</p>
         </div>
         <div className="adv-text">
         <i class="fa-solid fa-circle-check"></i>
-        <p>Lorem ipsum dolor sit amet, consecteturr nulla tempus. </p>
+        <p>Geri qaytarma əməliyyatının aktiv abunəliklər hissəsindən icrası</p>
         </div>
       </div>
       <a href="#">Ətraflı</a>
@@ -158,7 +158,7 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
   <h2 data-aos="zoom-in">Bizimlə əməkdaşlıq edən <span>idman zalları</span> </h2>
     <div data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" className="partner">
-     {partnerData.map((partner)=>(
+     {partnerData.map((partner,index)=>(
     <div className="slide"> {partner.image}</div>
     
     ))}

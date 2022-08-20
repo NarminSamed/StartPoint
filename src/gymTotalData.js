@@ -129,7 +129,7 @@ export const gymTotalData = [
     starCount:5
 
 },
-{  id: 14,
+{  id: 15,
     image: <Image cloudName='dkt4cajom' 
     publicId='https://res.cloudinary.com/dkt4cajom/image/upload/v1657953852/gym-6_pufqc0.png'/>,
     title: 'Knockout Boxing Club',
@@ -138,7 +138,7 @@ export const gymTotalData = [
     starCount:5
 
 },
-{  id: 14,
+{  id: 16,
     image: <Image cloudName='dkt4cajom' 
     publicId='https://res.cloudinary.com/dkt4cajom/image/upload/v1657953852/gym-6_pufqc0.png'/>,
     title: 'Knockout Boxing Club',
@@ -147,7 +147,7 @@ export const gymTotalData = [
     starCount:5
 
 },
-{  id: 14,
+{  id: 17,
     image: <Image cloudName='dkt4cajom' 
     publicId='https://res.cloudinary.com/dkt4cajom/image/upload/v1657953852/gym-6_pufqc0.png'/>,
     title: 'Knockout Boxing Club',
@@ -156,7 +156,7 @@ export const gymTotalData = [
     starCount:5
 
 },
-{  id: 14,
+{  id: 18,
     image: <Image cloudName='dkt4cajom' 
     publicId='https://res.cloudinary.com/dkt4cajom/image/upload/v1657953852/gym-6_pufqc0.png'/>,
     title: 'Knockout Boxing Club',
@@ -165,7 +165,7 @@ export const gymTotalData = [
     starCount:5
 
 },
-{  id: 14,
+{  id: 19,
     image: <Image cloudName='dkt4cajom' 
     publicId='https://res.cloudinary.com/dkt4cajom/image/upload/v1657953852/gym-6_pufqc0.png'/>,
     title: 'Knockout Boxing Club',
