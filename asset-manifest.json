@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/StartPoint/static/css/main.d1eb13c8.css",
-    "main.js": "/StartPoint/static/js/main.4689c696.js",
+    "main.css": "/StartPoint/static/css/main.4f85df2b.css",
+    "main.js": "/StartPoint/static/js/main.75d059dd.js",
     "static/media/video.MP4": "/StartPoint/static/media/video.a1f4b9f292cf91d0f0ce.MP4",
     "static/media/Layer-1.png": "/StartPoint/static/media/Layer-1.4f65bdca23237767a7f7.png",
     "static/media/play-market.svg": "/StartPoint/static/media/play-market.647f8305294ad902549f64ab46e979da.svg",
@@ -13,11 +13,11 @@
     "static/media/slick.woff": "/StartPoint/static/media/slick.295183786cd8a1389865.woff",
     "static/media/azflag.svg": "/StartPoint/static/media/azflag.6be8418b4e58c8a79a0d2b35ddfc5ab8.svg",
     "static/media/punk.svg": "/StartPoint/static/media/punk.94bec603b23515b87d596f736abf9158.svg",
-    "main.d1eb13c8.css.map": "/StartPoint/static/css/main.d1eb13c8.css.map",
-    "main.4689c696.js.map": "/StartPoint/static/js/main.4689c696.js.map"
+    "main.4f85df2b.css.map": "/StartPoint/static/css/main.4f85df2b.css.map",
+    "main.75d059dd.js.map": "/StartPoint/static/js/main.75d059dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1eb13c8.css",
-    "static/js/main.4689c696.js"
+    "static/css/main.4f85df2b.css",
+    "static/js/main.75d059dd.js"
   ]
 }
