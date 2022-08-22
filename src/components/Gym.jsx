@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 
 import ReactPaginate from 'react-paginate';
 import { regionsData } from '../regionsData'
 import { servicesData } from '../servicesData';
 import { filterData } from '../filterData';
 import { sortData } from '../sortData';
+
 import { gymTotalData } from '../gymTotalData';
+
 import StarRatings from 'react-star-ratings'
 
 import Slider from "react-slick";
@@ -20,7 +23,7 @@ const Gym = () => {
   const [isActiveFilter, setIsActiveFilter] = useState (false)
   const [isActiveSort, setIsActiveSort] = useState (false)
 
-
+// Paginate
   const [currentItems, setCurrentItems] = useState(null);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
@@ -30,6 +33,7 @@ const Gym = () => {
    
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems(gymTotalData.slice(itemOffset, endOffset));
+    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
     setPageCount(Math.ceil(gymTotalData.length / itemsPerPage));
   }, [itemOffset, itemsPerPage, gymTotalData]);
 
@@ -39,6 +43,7 @@ const Gym = () => {
     setItemOffset(newOffset);
   };
 
+  // Slider
   const settings = {
     dots: false,
     infinite: true,
@@ -95,7 +100,7 @@ const Gym = () => {
 
 <div className="select">
   
-<div  className="select-btn select-line" onClick={(e) => 
+<div  className="select-btn select-line" onClick={() => 
 setIsActive(!isActive) }>
   <span>Rayonlar</span>
   <i className="fa-solid fa-angle-down"></i>
@@ -103,8 +108,8 @@ setIsActive(!isActive) }>
 <div className="select_content">
   {isActive && (
 <ul className='options'>
-           {regionsData.map((region)=> (
-          <li className='option-item' >{region.region}</li>
+           {regionsData.map((region,i)=> (
+          <li className='option-item' key={region.id}>{region.region}</li>
              ))}
         </ul>
         )}
@@ -117,7 +122,7 @@ setIsActive(!isActive) }>
 
 <div className="select">
   
-<div  className="select-btn select-line" onClick={(e) => 
+<div  className="select-btn select-line" onClick={() => 
 setIsActiveService(!isActiveService) }>
   <span>Xidmətlər</span>
   <i className="fa-solid fa-angle-down"></i>
@@ -125,8 +130,8 @@ setIsActiveService(!isActiveService) }>
 <div className="select_content">
   {isActiveService && (
 <ul className='options'>
-        {servicesData.map((service)=> (
-          <li className='option-item' >{service.service}</li>
+        {servicesData.map((service,i)=> (
+          <li className='option-item' key={service.id} >{service.service}</li>
              ))}
         </ul>
         )}
@@ -137,7 +142,7 @@ setIsActiveService(!isActiveService) }>
 
 <div className="select">
   
-<div  className="select-btn select-line" onClick={(e) => 
+<div  className="select-btn select-line" onClick={() => 
 setIsActiveFilter(!isActiveFilter) }>
   <span>Filter</span>
   <i className="fa-solid fa-angle-down"></i>
@@ -145,8 +150,8 @@ setIsActiveFilter(!isActiveFilter) }>
 <div className="select_content">
   {isActiveFilter && (
 <ul className='options'>
-           {filterData.map((filter)=> (
-          <li className='option-item' >{filter.filter}</li>
+           {filterData.map((filter,i)=> (
+          <li className='option-item'key={filter.id} >{filter.filter}</li>
              ))}
         </ul>
         )}
@@ -156,7 +161,7 @@ setIsActiveFilter(!isActiveFilter) }>
 
 <div className="select">
   
-<div  className="select-btn" onClick={(e) => 
+<div  className="select-btn" onClick={() => 
 setIsActiveSort(!isActiveSort) }>
   <span>Sıra</span>
   <i className="fa-solid fa-angle-down"></i>
@@ -164,8 +169,8 @@ setIsActiveSort(!isActiveSort) }>
 <div className="select_content">
   {isActiveSort && (
 <ul className='options'>
-           {sortData.map((sort)=> (
-          <li className='option-item' >{sort.sort}</li>
+           {sortData.map((sort,i)=> (
+          <li className='option-item' key={sort.id} >{sort.sort}</li>
              ))}
         </ul>
         )}
@@ -182,8 +187,9 @@ setIsActiveSort(!isActiveSort) }>
 
 <section className="gyms_section">
       <div className="gym-wrapper">
-      {gymTotalData.map((gym)=>(
-        <div className="gym-container">
+      {gymTotalData.map((gym,i)=>(
+        
+        <div key={gym.id} className="gym-container">
         <div className='gym-img'>{gym.image}</div>  
         <div className="gym-body">
           <p className='gym-title'>{gym.title}</p>
@@ -204,12 +210,13 @@ setIsActiveSort(!isActiveSort) }>
         </div>
       ))}
       </div>
+      
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
         onPageChange={handlePageClick}
         pageRangeDisplayed={3}
-        pageCount={10}
+        pageCount={pageCount}
         previousLabel="< previous"
         renderOnZeroPageCount={null}
         marginPagesDisplayed='2'
@@ -229,8 +236,8 @@ setIsActiveSort(!isActiveSort) }>
       <h2>Son baxılan idman zalları</h2>
       <div className="gym-wrapper_promation">
       <Slider {...settings} >
-      {gymTotalData.map((gym)=>(
-        <div className="gym-container">
+      {gymTotalData.map((gym,i)=>(
+        <div key={gym.id} className="gym-container">
         <div className='gym-img'>{gym.image}</div>  
         <div className="gym-body">
           <p className='gym-title'>{gym.title}</p>

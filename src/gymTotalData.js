@@ -165,14 +165,5 @@ export const gymTotalData = [
     starCount:5
 
 },
-{  id: 19,
-    image: <Image cloudName='dkt4cajom' 
-    publicId='https://res.cloudinary.com/dkt4cajom/image/upload/v1657953852/gym-6_pufqc0.png'/>,
-    title: 'Knockout Boxing Club',
-    location: 'Abbas Mirzə Şərifzadə küç.',
-    feedback: '(2 rəy)',
-    starCount:5
-
-},
 
 ]

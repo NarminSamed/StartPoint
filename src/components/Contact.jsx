@@ -28,19 +28,20 @@ const Contact = () => {
     <>
     <div className='contact-hero'>
       <div className="contact_head">
-        <h2>Əlaqə</h2>
+        <h2 data-aos="fade-right">Əlaqə</h2>
       </div>
     </div>
 
 <div className="contact__container">
   <div className="contact_title">
-    <h4>Bizimlə əlaqə saxlayın</h4>
-    <p>İş saatı: Bazar ertəsi - Cümə (09:00 - 19:00)</p>
+    <h4 data-aos="zoom-in" data-aos-delay="300">Bizimlə əlaqə saxlayın</h4>
+    <p data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-delay="400">İş saatı: Bazar ertəsi - Cümə (09:00 - 19:00)</p>
   </div>
 
 <div className="contact_info">
 
-<div className="contact_flex">
+<div className="contact_flex" data-aos="flip-left">
  
 <i class="fa-solid fa-location-dot"></i>
 
@@ -49,18 +50,18 @@ const Contact = () => {
 
 </div>
 
-<div className="contact_flex">
+<div className="contact_flex" data-aos="flip-left">
  
-<i class="fa-solid fa-phone"></i>
+<i className="fa-solid fa-phone"></i>
 
 <h4>Əlaqə</h4>
 <a href="tel:+994706075222">+994 70 607 52 22</a>
 
 </div>
 
-<div className="contact_flex">
+<div className="contact_flex" data-aos="flip-left">
  
-<i class="fa-solid fa-envelope"></i>
+<i className="fa-solid fa-envelope"></i>
 
 <h4>E-poçt</h4>
 <a href="mailto:info@startpoint.az">info@startpoint.az</a>

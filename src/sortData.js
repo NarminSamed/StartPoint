@@ -1,4 +1,6 @@
 export const sortData = [
-    {sort:'yüksək reytinqdən'},
-    {sort:'aşağı reytinqdən'},
+    {id:1,
+     sort:'yüksək reytinqdən'},
+    {id:2,
+     sort:'aşağı reytinqdən'},
 ]

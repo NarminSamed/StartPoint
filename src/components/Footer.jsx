@@ -1,6 +1,11 @@
 import React from 'react'
 import whiteLogo from '../images/logo-white.png'
+import {Link} from 'react-router-dom'
 const Footer = () => {
+
+    const currentYear = (new Date().getFullYear()) 
+    const yearTxt = currentYear === 2022 ? "2022" : "2022 - "+currentYear 
+    
   return (
     <section className="footer">
         <div className="footer-body">
@@ -30,15 +35,15 @@ const Footer = () => {
                 <h4 className='footer-title'>Əlaqə</h4>
                 <a href="#">+994 70 607 52 22</a>
                 <div className="icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-whatsapp"></i>
                 </div>
             </div>
         </div>
         <div className="footer-content">
-            <p>© 2021 StartPoint.az Bütün hüquqlar qorunur.</p>
+            <p>© <span>{ yearTxt }</span> <Link to="/" className='footer_link'>StartPoint.az </Link> Bütün hüquqlar qorunur.</p>
         </div>
     </section>
   )

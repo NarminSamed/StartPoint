@@ -16,7 +16,13 @@
 .nav-link-left > button {
     font-size: 14px;
 } 
-
+.search_form {
+    position: absolute;
+    top: 11%;
+    height: 60px;
+    left: 0;
+    padding-left: 15%;
+    right: 34%;}
 /* ABOUT PAGE */
 
 .partner_main > h4,
@@ -64,13 +70,10 @@
 }
 
 
+@media (max-width:1160px) {
+     /* navbar */
 
-
-@media (max-width:992px) {
-
-    /* navbar */
-
-    .logo {
+     .logo {
         width: 110px;
         margin-top:10px
     }
@@ -84,10 +87,7 @@
 }
 
 
-.nav__btn > .fa-bars {
-    display: block;
-    font-size: 30px;
-}
+
 
 .nav-link-left {
     visibility: hidden;
@@ -122,8 +122,20 @@
     flex-direction: column;
     list-style: none;
 }
+.search_form {
+    position: absolute;
+    top: 11%;
+    height: 60px;
+    left: 0;
+    padding-left: 15%;
+    right: 33%;
+}
 
+}
 
+@media (max-width:992px) {
+
+   
     /* header */
     .head-text {
         display: flex;
@@ -879,3 +891,103 @@ font-size: 12px;
 }
 }
 
+@media (max-width:576px) {
+  /* Header */
+  .advantages > h2 {
+    width: 100%;
+    font-size: 22px;
+}
+.gym-heading > h2 {
+    font-size: 22px;
+    padding: 5% 0;
+}
+.why-us > h2 {
+    font-size: 24px;
+    padding: 5% 0;
+}
+.why-us_text > h4 {
+    font-size: 16px;
+}
+.testimonials-header > h2 {
+    font-size: 24px;
+    padding-bottom: 5%;
+}
+.price-table h2 {
+    font-size: 24px;
+    padding: 6% 0;
+}
+.promotion-main h2 {
+    font-size: 24px;
+    padding: 7% 0 2%;
+ }
+ .promotion-main p {
+    font-size: 14px;
+}
+
+.sp-logo {
+    width: 100%;
+}
+
+.sp-logo > p {
+    font-size: 14px;
+    color: var(--clr-grey);
+    padding: 7% 0 0;
+}
+.footer-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-content {
+    padding: 5% 0;
+}
+.footer-content p {
+    padding: 2% 0;
+    font-size: 12px;
+}
+.footer-content p > span {
+    font-size: 12px;
+}
+.mobile-menu-icon {
+    padding: 1%;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+}
+/* gym */
+.select-btn {
+    padding: 3%;
+    background: var(--primary-white);
+}
+.partner_advantages h2, .user_advantages h2 {
+    font-size: 24px;
+}
+.partner_main > h4, .user_main > h4 {
+    font-size: 24px;
+    padding-bottom: 4%;
+    text-align: center;
+}
+.about_section_partners > h2 {
+    font-size: 22px;
+}
+.price-hero__body > h1 {
+    font-size: 24px;
+}
+.price-box_title > h3 {
+    font-size: 16px;
+    padding: 2% 2%;
+}
+.price-box_wrapper .price-box_body {
+    width: 80%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.price_number > p {
+    font-size: 32px;
+}
+.price_number > i {
+    font-size: 22px;
+    color: var(--primary-white);
+}
+}

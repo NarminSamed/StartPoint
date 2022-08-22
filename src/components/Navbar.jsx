@@ -1,7 +1,7 @@
 
 import logo from '../startpoint.png'
 import flag from '../assets/azflag.svg'
-import {Link, Outlet} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import React, { useState, useRef} from 'react'
 
@@ -23,7 +23,6 @@ const handleChange = event => {
   setSelected(event.target.value);
 };
 
-// yeni cehd
 const searchBtn = useRef () 
 const closingBtn = useRef ()
 const searchForm = useRef()
@@ -37,8 +36,7 @@ const formActive = (e) => {
     searchBtn.current.classList.remove('fa-magnifying-glass')
     closingBtn.current.style.display='block'
     searchBtn.current.style.display ="block"
-    //  searchBtn.current.classList.replace('fa-magnifying-glass','fa-xmark')
-     searchForm.current.classList.add('js-active')
+    searchForm.current.classList.add('js-active')
   }
 }
 
@@ -69,21 +67,19 @@ const formActive = (e) => {
         <div className={isMobile ? "nav-links-mobile" : "nav-link-left"}
         onClick={() => setIsMobile(false)} > 
          
-       
-          {/* <ul className='main-menu_list'> */}
+
         <ul className='nav-links'>
+            <li><Link to='/' className='main-menu_item line'>Ana səhifə</Link></li>
             <li><Link to='/about' className='main-menu_item line'>Haqqımızda</Link></li>
             <li><Link to='/gym' className='main-menu_item line'>İdman zalları</Link></li>
             <li><Link to='/pricing' className='main-menu_item line'>Qiymət</Link></li>
             <li><Link to='/contact' className='main-menu_item line'>Əlaqə</Link></li>
           </ul>
 
-       {/* yeni cehd */}
-
       <div className="navbar-search">
         <button type='button' className="nav_search__toggle" onClick={formActive}>
           <i  className="fa-solid fa-magnifying-glass search_icon" ref={searchBtn}></i>
-          <i class="fa-solid fa-xmark" ref={closingBtn} onClick={closingInput}></i>
+          <i className="fa-solid fa-xmark" ref={closingBtn} onClick={closingInput}></i>
         </button>
       <div className="search_form" ref={searchForm}>
         <form className='form-search_inner' action="/">
@@ -102,11 +98,6 @@ const formActive = (e) => {
         <div className="nav-link-right">
         <Link to='/login' className='login-btn'>Giriş</Link>
         <button type='button'>Qeydiyyat</button>
-        {/* <div className="nav-lang">
-          <img src={flag} alt="AZ-flag" />
-          <span>AZ</span>
-          <i className="fa-solid fa-angle-down"></i>
-        </div> */}
 
 <div>
       <select className='nav-lang' value={selected} onChange={handleChange}>
@@ -127,21 +118,6 @@ const formActive = (e) => {
           >
            {isMobile ?  <i className="fas fa-times"></i> : <i className="fa-solid fa-bars"></i> } 
             </button>
-
-
-        {/* <button type='button' className={isMobile ?  <i className="fas fa-times"></i> : <i className="fa-solid fa-bars"></i> } onClick={() => setIsMobile(!isMobile)}> */}
-           {/* {isMobile ?  <i className="fas fa-times"></i> : <i className="fa-solid fa-bars"></i> }  */}
-            
-
-
-
-            {/* <span className="burger-inner">
-              <span className="burger-line">
-
-              </span>
-            </span>
-              */}
-            {/* </button> */}
 
             
       </div> 

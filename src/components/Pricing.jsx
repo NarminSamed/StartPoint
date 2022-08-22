@@ -18,14 +18,14 @@ const Pricing = () => {
      data-aos-anchor-placement="center-bottom" data-aos-delay="400">Bizə qoşul İlk ay ödənişsiz istifadə et</p>
 </div>
 
-<div data-aos="zoom-in" data-aos-delay="400"  className="price-box_wrapper">
+<div className="price-box_wrapper">
 
-    <div className="price-box_body">
+    <div data-aos="flip-left" className="price-box_body">
   <p className='name'>Standart <br /> paket</p>
   <p className='info'>Zalın il ərzində tətbiqdə görünməsi</p>
   <div className="price_number">
   <p className='number'>100</p>
-  <i class="fa-solid fa-manat-sign"></i>
+  <i className="fa-solid fa-manat-sign"></i>
   </div>
 
   <div className="price_btn">
@@ -33,12 +33,12 @@ const Pricing = () => {
   </div>
   </div>
 
-  <div className="price-box_body">
+  <div data-aos="flip-left" delay="600" className="price-box_body">
   <p className='name'>Standart Plus<br /> İllik </p>
   <p className='info'>Zalın il ərzində tətbiqdə görünməsi</p>
   <div className="price_number">
   <p className='number'>500</p>
-  <i class="fa-solid fa-manat-sign"></i>
+  <i className="fa-solid fa-manat-sign"></i>
   </div>
 
   <div className="price_btn">
@@ -46,12 +46,12 @@ const Pricing = () => {
   </div>
   </div>
 
-  <div className="price-box_body">
+  <div data-aos="flip-left" delay="800" className="price-box_body">
   <p className='name'>Premium <br /> paket</p>
   <p className='info'>Zalın il ərzində tətbiqdə görünməsi</p>
   <div className="price_number">
   <p className='number'>900</p>
-  <i class="fa-solid fa-manat-sign"></i>
+  <i className="fa-solid fa-manat-sign"></i>
   </div>
  <div className="price_btn">
   <a href="#">İndi al</a>
@@ -71,61 +71,61 @@ const Pricing = () => {
 
   <thead>
     <tr>
-    <td></td>
-      <td className='table_head'>Standart paket</td>
-      <td className='table_head'>Standart Plus paket</td>
-      <td className='table_head'>Premium paket</td>
+    <th></th>
+      <th className='table_head'>Standart paket</th>
+      <th className='table_head'>Standart Plus paket</th>
+      <th className='table_head'>Premium paket</th>
     </tr>
   </thead>
 
 <tbody>
   <tr className='table_row'>
     <td className='feature_title'>İsdifadəçi Mobil APP-i</td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
   </tr>
 
   <tr className='table_row'>
     <td className='feature_title'>Operator paneli</td>
-    <td><i class="fa-solid fa-xmark"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-xmark"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
   </tr>
 
   <tr className='table_row'>
     <td className='feature_title'>Sahibkar paneli</td>
-    <td><i class="fa-solid fa-xmark"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-xmark"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
   </tr>
 
   <tr className='table_row'>
     <td className='feature_title'>Nağd ödəniş dəstəyi</td>
-    <td><i class="fa-solid fa-xmark"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-xmark"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
   </tr>
 
   <tr className='table_row'>
     <td className='feature_title'>24/7 dəstək</td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
   </tr>
 
   <tr className='table_row'>
     <td className='feature_title'>Push Notifications</td>
-    <td><i class="fa-solid fa-xmark"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-xmark"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
   </tr>
 
   <tr className='table_row'>
     <td className='feature_title'>SMM xidməti</td>
-    <td><i class="fa-solid fa-xmark"></i></td>
-    <td><i class="fa-solid fa-xmark"></i></td>
-    <td><i class="fa-solid fa-check"></i></td>
+    <td><i className="fa-solid fa-xmark"></i></td>
+    <td><i className="fa-solid fa-xmark"></i></td>
+    <td><i className="fa-solid fa-check"></i></td>
   </tr>
 
 </tbody>

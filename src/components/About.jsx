@@ -39,14 +39,14 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
     <h4 data-aos="fade-right">Sizin üçün işləri asanlaşdırmaq üçün hər şeyi edirik</h4>
     <div data-aos="fade-right" data-aos-delay="300" className="partner_description">
       <div className="description_header">
-      <i class="fa-solid fa-circle-check"></i>
+      <i className="fa-solid fa-circle-check"></i>
       <h4>Sizin üçün işləri asanlaşdırmaq üçün hər şeyi edirik</h4>
       </div>
       <p> <span>Detallara əhəmiyyət veririk.</span> <br />Biz işlədiyimiz biznes sahiblərini dinləyirik və onların düşüncələrinə əhəmiyyət veririk, bizim üçün keyfiyyət bu deməkdir. Biz hərtərəfli, sadə və güclü məhsul təqdim etməkdən qürur duyuruq.</p>
     </div>
     <div data-aos="fade-right" data-aos-delay="400" className="partner_description">
       <div className="description_header">
-      <i class="fa-solid fa-circle-check"></i>
+      <i className="fa-solid fa-circle-check"></i>
       <h4>Biz proqram təminatından daha çoxuyuq</h4>
       </div>
       <p> <span>Zal idarəetmə və qeydiyyat sistemi bizlikdir!</span> <br />Proqramımız biznes sahiblərinə idman zallarını ən yüksək keyfiyyətdə idarə etməyə kömək edir. StartPoint rezervasiyalar, planlaşdırma, müştəri məmnuniyyətinə dəstək, ödənişlər və s. ilə bağlı kömək edir.</p>
@@ -69,14 +69,14 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
     <h4 data-aos="fade-left">Sizin üçün işləri asanlaşdırmaq üçün hər şeyi edirik</h4>
     <div data-aos="fade-left"  data-aos-delay="300" className="user_description">
       <div className="description_header">
-      <i class="fa-solid fa-circle-check"></i>
+      <i className="fa-solid fa-circle-check"></i>
       <h4>Sizin üçün işləri asanlaşdırmaq üçün hər şeyi edirik</h4>
       </div>
       <p> <span>Detallara əhəmiyyət veririk.</span> <br />Biz işlədiyimiz biznes sahiblərini dinləyirik və onların düşüncələrinə əhəmiyyət veririk, bizim üçün keyfiyyət bu deməkdir. Biz hərtərəfli, sadə və güclü məhsul təqdim etməkdən qürur duyuruq.</p>
     </div>
     <div data-aos="fade-left"  data-aos-delay="400" className="user_description">
       <div className="description_header">
-      <i class="fa-solid fa-circle-check"></i>
+      <i className="fa-solid fa-circle-check"></i>
       <h4>Biz proqram təminatından daha çoxuyuq</h4>
       </div>
       <p> <span>Zal idarəetmə və qeydiyyat sistemi bizlikdir!</span> <br />Proqramımız biznes sahiblərinə idman zallarını ən yüksək keyfiyyətdə idarə etməyə kömək edir. StartPoint rezervasiyalar, planlaşdırma, müştəri məmnuniyyətinə dəstək, ödənişlər və s. ilə bağlı kömək edir.</p>
@@ -159,7 +159,7 @@ Bütün növ idman mərkəzləri, studiolar və s. üçün ən yaxşı idarəetm
     <div data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" className="partner">
      {partnerData.map((partner,index)=>(
-    <div className="slide"> {partner.image}</div>
+    <div className="slide" key={partner.id}> {partner.image}</div>
     
     ))}
     </div>

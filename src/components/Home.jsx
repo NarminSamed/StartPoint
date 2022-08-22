@@ -3,7 +3,7 @@ import girl from '../images/Layer-1.png'
 import appStore from '../assets/app-store.svg'
 import playMarket from '../assets/play-market.svg'
 import {gymsData} from '../gymsData'
-import { testimonialsData,settings } from '../testimonialsData'
+import { testimonialsData} from '../testimonialsData'
 import StarRatings from 'react-star-ratings'
 import {partnerData} from '../partnerData'
 import video from '../images/video.MP4'
@@ -88,8 +88,8 @@ const Home = () => {
   
     <div data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" className="partner">
-     {partnerData.map((partner,index)=>(
-    <div className="slide"> {partner.image}</div>
+     {partnerData.map((partner,i)=>(
+    <div className="slide" key={partner.id}> {partner.image} </div>
     ))}
  
    
@@ -168,9 +168,9 @@ const Home = () => {
         <button>Hamısı</button>
       </div>
       <div className="gym-wrapper">
-      {gymsData.map((gym, index)=>(
-        <div className="gym-container">
-        <div className='gym-img'>{gym.image}</div>  
+      {gymsData.map((gym, i)=>(
+        <div className="gym-container" key={gym.id}>
+        <div className='gym-img' >{gym.image}</div>  
         <div className="gym-body">
           <p className='gym-title'>{gym.title}</p>
           <p className='location'>{gym.location}</p>
@@ -365,7 +365,7 @@ const Home = () => {
         </div>
       </div>
       <div className="promotion-video">
-      <video src={video} width="750" height="500" controls>
+      <video src={video} width="750" height="500" controls loop muted autoPlay>
      </video>
 
       </div>
