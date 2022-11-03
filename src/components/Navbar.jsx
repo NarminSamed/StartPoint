@@ -97,7 +97,7 @@ const formActive = (e) => {
 
         <div className="nav-link-right">
         <Link to='/login' className='login-btn'>Giriş</Link>
-        <button type='button'>Qeydiyyat</button>
+        {/* <button type='button'>Giriş</button> */}
 
 <div>
       <select className='nav-lang' value={selected} onChange={handleChange}>

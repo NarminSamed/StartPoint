@@ -14,6 +14,7 @@ import StarRatings from 'react-star-ratings'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
+import { Link } from 'react-router-dom';
 
 
 const Gym = () => {
@@ -56,8 +57,6 @@ const Gym = () => {
     variableWidth: true,
     arrows:false,
 
-    
-    
     initialSlide: 0,
     responsive: [
       {
@@ -188,8 +187,9 @@ setIsActiveSort(!isActiveSort) }>
 <section className="gyms_section">
       <div className="gym-wrapper">
       {gymTotalData.map((gym,i)=>(
-        
+      
         <div key={gym.id} className="gym-container">
+       <Link to='/gymdetailed'>
         <div className='gym-img'>{gym.image}</div>  
         <div className="gym-body">
           <p className='gym-title'>{gym.title}</p>
@@ -207,6 +207,7 @@ setIsActiveSort(!isActiveSort) }>
 
           </div>
           </div>
+          </Link>
         </div>
       ))}
       </div>

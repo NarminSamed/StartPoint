@@ -9,7 +9,7 @@ import {partnerData} from '../partnerData'
 import video from '../images/video.MP4'
 import Testimonial from './Testimonial'
 
-
+import { Link } from 'react-router-dom';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -117,7 +117,7 @@ const Home = () => {
         <p>Tətbiqimizlə gediş edənlərə endirimli qiymətlər</p>
         </div>
       </div>
-      <a href="#">Ətraflı</a>
+      <Link to='/userinterface'>Ətraflı</Link>
       </div> 
 
       <div className="management benefit">

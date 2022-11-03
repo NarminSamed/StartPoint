@@ -16,6 +16,9 @@ import Whatsapp from './components/Whatsapp';
 import "../node_modules/slick-carousel/slick/slick.css" 
 import "../node_modules/slick-carousel/slick/slick-theme.css";
 import "../node_modules/slick-carousel/slick.jquery.json"
+import Login from './components/Login';
+import GymDetailed from './components/GymDetailed';
+import UserInterface from './components/UserInterface';
 
 
 
@@ -30,6 +33,9 @@ function App() {
     <Route path='/gym' element={<Gym/>} />
     <Route path='/pricing' element={<Pricing/>} />
     <Route path='/contact' element={<Contact/>} />
+    <Route path='/login' element={<Login/>} />
+    <Route path='/GymDetailed' element={<GymDetailed/>}/>
+    <Route path='/UserInterface' element={<UserInterface/>} />
   </Routes>
   <Footer />
   <Whatsapp />

@@ -7,7 +7,6 @@ const Pricing = () => {
       <div className="price-hero__body">
           <h1 data-aos="fade-right">Qiymətlərimiz</h1>
       </div>
-
 </div>
 
 <div className="price-box_hero">
