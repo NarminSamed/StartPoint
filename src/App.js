@@ -19,6 +19,8 @@ import "../node_modules/slick-carousel/slick.jquery.json"
 import Login from './components/Login';
 import GymDetailed from './components/GymDetailed';
 import UserInterface from './components/UserInterface';
+import ControlPanel from './components/ControlPanel';
+import OperatorPanel from './components/OperatorPanel';
 
 
 
@@ -36,6 +38,8 @@ function App() {
     <Route path='/login' element={<Login/>} />
     <Route path='/GymDetailed' element={<GymDetailed/>}/>
     <Route path='/UserInterface' element={<UserInterface/>} />
+    <Route path='/ControlPanel' element={<ControlPanel/>} />
+    <Route path='/OperatorPanel' element={<OperatorPanel/>} />
   </Routes>
   <Footer />
   <Whatsapp />

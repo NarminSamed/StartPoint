@@ -1941,7 +1941,7 @@ table, th, td {
 .gym-detailed_info_container {
     width: 100%;
     padding: 3% 6%;
-    background: var(--primary-background-grey);
+    background: var(--primary-light-grey);
 }
 .gym-detailed_info_wrapper {
     display: flex;
@@ -2203,15 +2203,18 @@ table, th, td {
 
 /* USER INTERFACE DETALIED */
 
-.user-interface_hero {
+.user-interface_hero,
+.control-panel_hero {
     width: 100%;
-    padding: 12% 6%;
-    background: var(--primary-background-grey);
+    padding: 12% 6% 6%;
+    background: var(--primary-light-grey);
 }
-.user-inetrface_body > h1 {
+.user-interface_body > h1,
+.control-panel_body > h1 {
     font-size: 40px;
     letter-spacing: .5px;
-    padding-top: 4%;
+    text-align: center;
+    padding: 2%;
 }
 
 .user-interface_stages {
@@ -2367,4 +2370,172 @@ table, th, td {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+
+
+/* SOFTWARE PANEL */
+
+.functionality-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5% 6%;
+}
+.functionality-section > .__description {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.functionality-section > .__description > h3,
+.class-section > .__description > h3,
+.customer-section > .__description > h3 {
+    font-size: 40px;
+    letter-spacing: .5px;
+    text-align: center;
+    padding-bottom: 3%
+}
+.functionality-section > .__description > h3 > span,
+.class-section > .__description > h3 > span,
+.customer-section > .__description > h3 > span {
+    color: var(--clr-grey);
+}
+.functionality-section > .__description > p,
+.class-section > .__description > p,
+.customer-section > .__description > p {
+    text-align: center;
+    width: 80%;
+    color: var(--primary-grey-hover);
+    line-height: 30px;
+    font-size: 18px;
+}
+.functionality-section > .__image {
+    width: 50%;
+    background: var(--primary-background-grey);
+    height: 450px;
+    position: relative;
+    border-radius: 10px;
+}
+.functionality-section > .__image > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -20%;
+}
+
+.class-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 6%;
+    align-items: center;
+}
+
+.class-section > .__description,
+.customer-section > .__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.class-section > .__description > span {
+    color: var(--primary-red);
+    font-weight: 700;
+    letter-spacing: .5px;
+    padding-top: 2%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.class-section > .__image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.class-section > .__image > img {
+    width: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.customer-section {
+    width: 100%;
+    padding: 6% 6%;
+    background: var(--primary-background-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-section > .__image {
+    width: 50%;
+    height: auto;
+}
+.customer-section > .__image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.control-panel_advantages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 6%;
+}
+.control-panel_advantages > .control-panel_advantage {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.control-panel_advantages > .control-panel_advantage > i {
+    font-size: 32px;
+    color: var(--primary-red);
+    padding: 8% 1% 6% 7%;
+}
+.control-panel_advantages > .control-panel_advantage > h4 {
+    font-size: 20px;
+    padding: 1% 1% 6% 7%;
+    letter-spacing: .5px;
+    user-select: none;
+}
+.control-panel_advantages > .control-panel_advantage > p {
+    font-size: 16px;
+    padding: 0 7% 2% 7%;
+    letter-spacing: .2px;
+    color: var(--primary-grey-hover);
+    user-select: none;
+}
+
+.more-detailed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 6%;
+    background: var(--primary-red);
+    margin-bottom: 5%;
+}
+.more-detailed > h2 {
+    color: var(--primary-white);
+    letter-spacing: .5px;
+    font-weight: 600;
+    font-size: 30px;
+    padding-right: 2%;
+}
+.more-detailed > button {
+    background: var(--primary-white);
+    color: var(--primary-red);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: .5px;
+    border-radius: 10px;
+    padding: 16px 32px;
+    border: 1px solid transparent;
+    transition: .3s all;
+}
+.more-detailed > button:hover {
+    border: 1px solid var(--primary-red-hover);
 }

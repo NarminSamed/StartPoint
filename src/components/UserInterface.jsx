@@ -14,7 +14,7 @@ const UserInterface = () => {
   return (
     <>
     <div className="user-interface_hero">
-        <div className="user-inetrface_body">
+        <div className="user-interface_body">
             <h1>İstifadəçi interfeysi</h1>
         </div>
     </div>

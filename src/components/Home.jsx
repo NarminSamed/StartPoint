@@ -137,7 +137,7 @@ const Home = () => {
         <p>Həm nağd, həm onlayn ödəniş dəstəyi</p>
         </div>
       </div>
-      <a href="#">Ətraflı</a>
+      <Link to='/controlpanel'>Ətraflı</Link>
       </div>
 
       <div className="operator benefit">
@@ -157,7 +157,7 @@ const Home = () => {
         <p>Geri qaytarma əməliyyatının aktiv abunəliklər hissəsindən icrası</p>
         </div>
       </div>
-      <a href="#">Ətraflı</a>
+      <Link to='/operatorpanel'>Ətraflı</Link>
       </div>
     </div>
     </section>
