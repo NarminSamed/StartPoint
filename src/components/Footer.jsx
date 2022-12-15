@@ -26,6 +26,7 @@ const Footer = () => {
                 <h4 className='footer-title'>Şirkət</h4>
                 <div className="company">
                     <a href="#">Haqqımızda</a>
+                    <Link to="/faq">FAQ</Link>
                     <a href="#">İstifadə şərtləri</a>
                     <a href="#">Gizlilik siyasəti</a>
                 </div>

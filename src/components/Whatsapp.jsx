@@ -4,9 +4,9 @@ const Whatsapp = () => {
   return (
     <>
 
-<a href="#" className="whatsapp">
-<i className="fa-brands fa-whatsapp"></i>
-</a>
+      <a href="#" className="whatsapp">
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
 
     </>
   )

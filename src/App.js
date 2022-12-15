@@ -21,6 +21,9 @@ import GymDetailed from './components/GymDetailed';
 import UserInterface from './components/UserInterface';
 import ControlPanel from './components/ControlPanel';
 import OperatorPanel from './components/OperatorPanel';
+import Faq from './components/Faq';
+import Rating from './components/Rating';
+import Payment from './components/Payment';
 
 
 
@@ -40,6 +43,9 @@ function App() {
     <Route path='/UserInterface' element={<UserInterface/>} />
     <Route path='/ControlPanel' element={<ControlPanel/>} />
     <Route path='/OperatorPanel' element={<OperatorPanel/>} />
+    <Route path='/Faq' element={<Faq/>} />
+    <Route path='/Rating' element={<Rating/>} />
+    <Route path='/Payment' element={<Payment/>} />
   </Routes>
   <Footer />
   <Whatsapp />

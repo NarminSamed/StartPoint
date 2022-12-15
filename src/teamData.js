@@ -8,7 +8,8 @@ export const teamData = [{
     position: 'Treyner',
     instagram: "https://www.instagram.com/ch__fitness/",
     phone:'',
-    whatsapp:"https://wa.me/509999095"
+    whatsapp:"https://wa.me/509999095",
+    tooltiptext: 'Sambo Europe Champ (2012); AZE Champ (2013-2016); Bodybuilding - 90kq (2018)🥈; Bodybuilding- 85 + (2019 ) 🥇'
 },
 {
     id:2,
@@ -18,7 +19,8 @@ export const teamData = [{
     position: 'Treyner',
     instagram: '',
     phone:'',
-    whatsapp:''
+    whatsapp:'',
+    tooltiptext: 'Fərdi məşqlərə qoşulmaq istəyənlər müraciət edə bilərsiniz.'
 },
 
 

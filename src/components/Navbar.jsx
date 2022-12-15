@@ -52,9 +52,37 @@ const formActive = (e) => {
   }
  }
 
+// seacrh
+const [query, setquery] = useState('')
+const handleChangeSearch = (e) => {
+setquery(e.target.value)
+const results = posts.filter(post => {
+  if (e.target.value === "") return posts
+  return post.title.toLowerCase().includes(e.target.value.toLowerCase())
+  })
+  setstate({
+  query: e.target.value,
+  list: results
+  })
+}
+const [state, setstate] = useState({
+  query: '',
+  list: []
+  })
+  const posts = [
+    {
+    url: '',
+    tags: ['react', 'blog'],
+    title: 'How to create a react search bar',
+    },
+    {
+    url:'',
+    tags: ['node','express'],
+    title: 'How to mock api data in Node',
+    },
+    // more data here
+    ]
 
-
-  
   return (
 <>
     <nav className='navbar'>
@@ -83,11 +111,21 @@ const formActive = (e) => {
         </button>
       <div className="search_form" ref={searchForm}>
         <form className='form-search_inner' action="/">
-          <input type="search" className='search-input' placeholder='Axtar...'/>
+          <input type="search" value={query} onChange={handleChangeSearch} className='search-input' placeholder='Axtar...'/>
           <button type='submit' className='search-submit'>
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
+        <ul>
+{(state.query === '' ? "" : state.list.map(post => {
+return <li key={post.title}>{post.title}</li>
+}))}
+</ul>
+<ul>
+{(state.query === '' ? "No posts match the query" : !state.list.length ? "Your query did not return any results" : state.list.map(post => {
+return <li key={post.title}>{post.title}</li>
+}))}
+</ul>
       </div>
 
       </div>
@@ -96,7 +134,7 @@ const formActive = (e) => {
 
 
         <div className="nav-link-right">
-        <Link to='/login' className='login-btn'>Giriş</Link>
+        <Link to='/login' className='login-btn'>Partnyor girişi</Link>
         {/* <button type='button'>Giriş</button> */}
 
 <div>
