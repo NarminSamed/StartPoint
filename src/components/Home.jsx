@@ -20,8 +20,6 @@ import "aos/dist/aos.css";
 
 
 
-
-
 const Home = () => {
 
   const settings = {
@@ -70,13 +68,57 @@ const Home = () => {
   AOS.init();
 
 
+
   return (
     <>
 
       <header className='header'>
         <div className="head-text" data-aos="zoom-out-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <h1><span>İdman zalı axtarırsınız,</span><br />amma bilmirsiniz harada?</h1>
-          <p>Onda sizə StartPoint yardımçı olacaq.</p>
+          <p>  Onda sizə StartPoint yardımçı olacaq.</p>
+          {/* <p> <Trans i18nKey="description.part1">1ci-----
+            Edit <code>src/App.js</code> Onda sizə StartPoint yardımçı olacaq.
+          </Trans>
+            </p>
+
+            <div>
+          {Object.keys(lngs).map((lng) => (
+            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+              {lngs[lng].nativeName}
+            </button>
+          ))}
+        </div> */}
+
+
+
+          {/* <button onClick={()=>handleClick('az')} >
+            Azerbaycan
+          </button>
+          <button onClick={()=>handleClick('eng')} >
+            english
+          </button>
+          <button onClick={()=>handleClick('rus')} >
+            russian
+         </button>
+         <p>
+            <h3>{t('description.part1')}</h3>  <h3>{t('title')}</h3> 
+          </p> */}
+
+
+          {/* {Object.keys(lngs).map((lng) => (
+            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng}>
+             {lngs[lng].nativeName}
+            </button>
+          ))}
+<p> <Trans i18nKey="description.part1">1ci-----
+            Edit <code>src/App.js</code> Onda sizə StartPoint yardımçı olacaq.
+          </Trans>
+            </p> */}
+
+
+
+
+
         </div>
         <div data-aos="zoom-out-left" data-aos-delay="100" data-aos-easing="ease-in-sine" data-aos-duration="600" className="head-photo">
           <img src={girl} alt="young girl" />
